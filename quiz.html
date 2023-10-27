@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylequiz.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="mainsection">
+        <div class="left">
+            <img src="https://i.pinimg.com/564x/9d/97/f7/9d97f73b53c2c4ed8b7b3a2f9af67ad7.jpg">
+        </div>
+        <div id="right">
+            <p>Time Left: <span id="timer"></span> seconds</p>
+            <h2 id="ques">Question</h2><br><hr><br>
+            <ul>
+                <li><input type="radio" id="a" class="answer"  name="answer"><label id="a_opt" for="a">question</label></li><br>
+                
+                <li><input type="radio" id="b" class="answer" name="answer"><label id="b_opt" for="b">question</label></li><br>
+                
+                <li><input type="radio"  id="c" class="answer" name="answer"><label id="c_opt" for="c">question</label></li><br>
+                
+                <li><input type="radio" id="d" class="answer" name="answer"><label id="d_opt" for="d">question</label></li><br>
+            </ul>
+            <div id="btn">
+                <button id="skip">skip</button>
+                <button id="next">next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

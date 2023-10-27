@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+      </style>
 </head>
 <body>
-    <!-- Login page of website -->
-    <div class="wrapper">
-        <form>
-            <h1>Login</h1>
-<div class="input-box">
-    <input type="text" placeholder="Username" required>
-<i class="bx bxs-user"></i>
-</div>
-<div class="input-box">
-<input type="password" placeholder="Password" required>
-<i class="bx bxs-lock-alt"></i>
-</div>
-<div class="remember-forgot">
-    <label><input type="checkbox">Remember me</label>
-    <a href="#">Forgot Password?</a>
-</div>
-<button type="submit" class="btn">Login</button>
-<div class="register-link"><p>Don't have an account <a href="#">Register</a></p>
-</div>
-        </form>
+    <div id="main_section">
+<div id="left">
+        <img src="https://as2.ftcdn.net/v2/jpg/04/34/29/29/1000_F_434292902_5e5dFMkx6TfjRBDoJXqRyiNShhQ07RY2.jpg">
     </div>
+    <div id="right">
+        <div id="details">
+            <h1>W E L C O M E</h1><br>
+            <form action="instructions.html" method="get" target="_self">
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="Enter Your Name" class="data" id="name" name="name" required><br><br>
+            <label>Email Id</label><br>
+            <input type="text" placeholder="Enter your Email Id" class="data" required><br><br>
+            <a href="instructions.html" target="_self"><input type="submit" id="button"><br></a> 
+            </form>
+        </div>
+       
+    </div>
+   </div>
 </body>
 </html>
+<script>
+    document.getElementById("name").addEventListener("submit", function(e) {
+        e.preventDefault();
+        
+        let inputValue = document.getElementById("name").value;
+        
+        localStorage.setItem("name", inputValue);
+        
+        window.location.href = "quiz.html";
+    });
+</script>
