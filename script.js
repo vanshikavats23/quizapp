@@ -43,7 +43,7 @@ const d_opt = document.getElementById("d_opt");
 const btn = document.getElementById("btn");
 let currentquiz=0;
 let score=0;
-let timer=10;
+let timer=60;
 loadquiz();
 startTimer();
 function startTimer() {
@@ -57,7 +57,7 @@ function startTimer() {
           if (currentquiz < quizData.length) {
               clearInterval(countdown);
               loadquiz();
-              startTimer(timer=10);
+              startTimer(timer=60);
           } else {
             
               quiz.innerHTML = `

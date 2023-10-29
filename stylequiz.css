@@ -22,16 +22,25 @@ button{
     font-size: 150%;
     color: white;
     font-weight: bolder;
-   
+
 }
 button:hover{
     background-color: violet;
 }
+#time{
+    width: 25%;
+    height: 20%;
+
+    margin-left: 80vh;
+  
+    background-color: #c6bdd4;
+    box-shadow:2px 2px rgb(197, 179, 197);
+}
 #right{
-    width: 40%;
-    height: 50%;
+    width: 50%;
+    height: 60%;
     margin-top: 20vh;
-    margin-left: 20vh;
+    margin-left: 10vh;
     border-radius: 10px;
     background-color: #c6bdd4;
     box-shadow: 10px 10px rgb(197, 179, 197);
@@ -46,8 +55,10 @@ h2{
     font-size: 200%;
 }
 #timer{
-    font-size: 100%;
-    font-weight: bold;
+    font-size: large;
+    color: #522892;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
     text-align: center;
 }
 @media (max-width:450px) {

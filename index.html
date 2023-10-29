@@ -8,6 +8,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
       </style>
+
+      <!-- <script src="./script.js" defer></script> -->
 </head>
 <body>
     <div id="main_section">
@@ -21,7 +23,7 @@
             <label for="name">Name</label><br>
             <input type="text" placeholder="Enter Your Name" class="data" id="name" name="name" required><br><br>
             <label>Email Id</label><br>
-            <input type="text" placeholder="Enter your Email Id" class="data" required><br><br>
+            <input type="email" placeholder="Enter your Email Id" class="data" required><br><br>
             <a href="instructions.html" target="_self"><input type="submit" id="button"><br></a> 
             </form>
         </div>
@@ -30,14 +32,3 @@
    </div>
 </body>
 </html>
-<script>
-    document.getElementById("name").addEventListener("submit", function(e) {
-        e.preventDefault();
-        
-        let inputValue = document.getElementById("name").value;
-        
-        localStorage.setItem("name", inputValue);
-        
-        window.location.href = "quiz.html";
-    });
-</script>
